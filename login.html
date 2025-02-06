@@ -33,3 +33,13 @@
     </script>
 </body>
 </html>
+<p><a href="#" id="logout" style="color: white; text-decoration: underline;">Logout</a></p>
+
+<script>
+    document.getElementById('logout').addEventListener('click', function() {
+        localStorage.removeItem('user');
+        alert("You have been logged out.");
+        window.location.href = "login.html";
+    });
+</script>
+
