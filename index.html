@@ -129,5 +129,50 @@
     </div>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload eBook (PDF)</title>
+    <style>
+        form {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            max-width: 400px;
+            margin: 50px auto;
+        }
+        input[type="file"], input[type="submit"] {
+            margin: 10px 0;
+        }
+        .message {
+            text-align: center;
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">Upload Your eBook (PDF Only)</h1>
+
+    <form action="upload.php" method="POST" enctype="multipart/form-data">
+        <label for="ebook">Select eBook (PDF only):</label>
+        <input type="file" name="ebook" id="ebook" accept="application/pdf" required><br>
+        <input type="submit" value="Upload eBook">
+    </form>
+
+    <!-- Display message if file is uploaded successfully -->
+    <div class="message">
+        <?php
+        if (isset($_GET['status']) && $_GET['status'] == 'success') {
+            echo "eBook uploaded successfully!";
+        }
+        ?>
+    </div>
+</body>
+</html>
+
 
 
