@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Our Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Our Marketplace</h1>
+        <p>Join our WhatsApp group to start buying and selling!</p>
+        
+        <button id="download-btn">Join WhatsApp Group</button>
+    </div>
+
+    <script>
+        document.getElementById('download-btn').addEventListener('click', function() {
+            window.location.href = 'https://chat.whatsapp.com/LWOGaSzwIKb9TXwAkAaPKF';
+        });
+
+        // Personalize with stored user data
+        const user = JSON.parse(localStorage.getItem('user'));
+        if (user) {
+            document.querySelector('h1').innerText = `Welcome, ${user.name}!`;
+        }
+    </script>
+</body>
+</html>
