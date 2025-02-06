@@ -27,3 +27,33 @@
     </script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="welcome-message">Welcome to Our Marketplace</h1>
+        <p>Join our WhatsApp group to start buying and selling!</p>
+        <button id="download-btn">Join WhatsApp Group</button>
+        <p><a href="login.html" style="color: white; text-decoration: underline;">Logout</a></p>
+    </div>
+
+    <script>
+        document.getElementById('download-btn').addEventListener('click', function() {
+            window.location.href = 'YOUR_WHATSAPP_GROUP_INVITE_LINK_HERE';
+        });
+
+        // Display the logged-in user's name
+        const user = JSON.parse(localStorage.getItem('user'));
+        if (user) {
+            document.getElementById('welcome-message').innerText = `Welcome, ${user.name}!`;
+        }
+    </script>
+</body>
+</html>
+
