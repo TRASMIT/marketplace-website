@@ -56,4 +56,78 @@
     </script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBook Library</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .ebook-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .ebook-item {
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            width: calc(33.33% - 20px);
+        }
+        .ebook-item img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .ebook-item h3 {
+            margin: 10px 0;
+        }
+        .ebook-item a {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .ebook-item a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the eBook Library</h1>
+        <div class="ebook-list">
+            <div class="ebook-item">
+                <img src="book-cover1.jpg" alt="Book Cover 1">
+                <h3>Book Title 1</h3>
+                <a href="read_book.php?book=book1.pdf" target="_blank">Read Online</a>
+                <a href="download.php?file=book1.pdf" download>Download eBook</a>
+            </div>
+            <div class="ebook-item">
+                <img src="book-cover2.jpg" alt="Book Cover 2">
+                <h3>Book Title 2</h3>
+                <a href="read_book.php?book=book2.pdf" target="_blank">Read Online</a>
+                <a href="download.php?file=book2.pdf" download>Download eBook</a>
+            </div>
+            <!-- Add more books here -->
+        </div>
+    </div>
+</body>
+</html>
+
 
