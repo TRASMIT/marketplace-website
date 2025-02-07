@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <a href="ebooks.html">📚 E-Books</a>
+            <a href="updates.html">🆕 Latest Updates</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Choose a Pathway</h2>
+        <div class="pathways">
+            <div class="pathway">
+                <h3>E-Books Section</h3>
+                <p>Browse and read e-books online.</p>
+                <a href="ebooks.html">Go to E-Books</a>
+            </div>
+            <div class="pathway">
+                <h3>Latest Updates</h3>
+                <p>Stay updated with the latest news.</p>
+                <a href="updates.html">Go to Updates</a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Check if user is logged in (for personalization)
+        const user = JSON.parse(localStorage.getItem('user'));
+        if (user) {
+            document.querySelector('h1').innerText = `Welcome, ${user.name}!`;
+        }
+    </script>
+</body>
+</html>
