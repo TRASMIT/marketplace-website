@@ -14,12 +14,20 @@ const books = [
 
 const bookGrid = document.getElementById("bookGrid");
 function displayBooks() {
-    bookGrid.innerHTML = "";
+    bookGrid.innerHTML = ""; // Clear existing books
+
     books.forEach(book => {
         const bookElement = document.createElement("div");
         bookElement.classList.add("book");
-        bookElement.innerHTML = `<h3>${book.title}</h3><a href="${book.pdf}" target="_blank">Read Online</a>`;
+
+        bookElement.innerHTML = `
+            <img src="${book.cover}" alt="${book.title} Cover">
+            <h3>${book.title}</h3>
+            <a href="${book.pdf}" target="_blank">Read Online</a>
+        `;
+
         bookGrid.appendChild(bookElement);
     });
 }
+
 displayBooks();
