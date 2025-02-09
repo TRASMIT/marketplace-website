@@ -4,7 +4,12 @@ const books = [
     { title: "Dracula by Bram Stoker (1897 Edition)", pdf: "https://raw.githubusercontent.com/TRASMIT/marketplace-website/main/E%20Books/DRACULA%20by%20Bram%20Stoker.pdf" },
     { title: "Pride and Prejudice", pdf: "https://raw.githubusercontent.com/TRASMIT/marketplace-website/main/E%20Books/pride-and-prejudice.pdf" },
     { title: "Little Women", pdf: "https://raw.githubusercontent.com/TRASMIT/marketplace-website/main/E%20Books/little-women.pdf" },
-    { title: "Frankenstein", pdf: "https://raw.githubusercontent.com/TRASMIT/marketplace-website/main/E%20Books/frankenstein.pdf" }
+    { title: "Frankenstein", pdf: "https://raw.githubusercontent.com/TRASMIT/marketplace-website/main/E%20Books/frankenstein.pdf" },
+    { title: "The Wizard of Oz", pdf: "https://raw.githubusercontent.com/TRASMIT/marketplace-website/main/E%20Books/wonderfulwizardo00baumiala.pdf" },
+    { title: "Alice in Wonderland", pdf: "https://raw.githubusercontent.com/TRASMIT/marketplace-website/main/E%20Books/alices-adventures-in-wonderland.pdf" },
+    { title: "Sense and Sensibilities", pdf: "https://raw.githubusercontent.com/TRASMIT/marketplace-website/main/E%20Books/sense-and-sensibility.pdf" }
+
+
 ];
 
 const bookGrid = document.getElementById("bookGrid");
