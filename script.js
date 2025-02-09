@@ -1,5 +1,5 @@
 const books = [
-    { title: "Book 1", pdf: "book1.pdf" },
+    { title: "The Great Gatsby", pdf: "book1.pdf" },
     { title: "Book 2", pdf: "book2.pdf" },
     { title: "Book 3", pdf: "book3.pdf" }
 ];
