@@ -22,12 +22,42 @@ nav ul li {
 }
 .book-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid */
     gap: 15px;
     padding: 20px;
+    text-align: center;
 }
+
 .book {
     background: #222;
     padding: 10px;
+    border-radius: 10px;
     text-align: center;
 }
+
+.book img {
+    width: 100%; /* Ensures all images take full width of container */
+    height: 220px; /* Fixed height for uniformity */
+    object-fit: cover; /* Crops images to fit without distortion */
+    border-radius: 8px;
+}
+
+.book h3 {
+    font-size: 14px;
+    margin: 10px 0;
+    color: white;
+}
+
+.book a {
+    display: block;
+    background: red;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.book a:hover {
+    background: darkred;
+}
+
