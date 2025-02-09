@@ -3,7 +3,8 @@ const books = [
     { title: "The Odyssey by Homer", pdf: "https://raw.githubusercontent.com/TRASMIT/marketplace-website/main/E%20Books/The_Odyssey.pdf" },
     { title: "Dracula by Bram Stoker (1897 Edition)", pdf: "https://raw.githubusercontent.com/TRASMIT/marketplace-website/main/E%20Books/DRACULA%20by%20Bram%20Stoker.pdf" },
     { title: "Pride and Prejudice", pdf: "https://raw.githubusercontent.com/TRASMIT/marketplace-website/main/E%20Books/pride-and-prejudice.pdf" },
-    { title: "Little Women", pdf: "https://raw.githubusercontent.com/TRASMIT/marketplace-website/main/E%20Books/little-women.pdf" }
+    { title: "Little Women", pdf: "https://raw.githubusercontent.com/TRASMIT/marketplace-website/main/E%20Books/little-women.pdf" },
+    { title: "Frankenstein", pdf: "https://github.com/TRASMIT/marketplace-website/blob/main/E%20Books/frankenstein.pdf" }
 ];
 
 const bookGrid = document.getElementById("bookGrid");
