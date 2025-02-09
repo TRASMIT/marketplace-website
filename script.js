@@ -1,5 +1,5 @@
 const books = [
-    { title: "The Great Gatsby", pdf: "book1.pdf" },
+    { title: "The Great Gatsby", pdf: "https://github.com/TRASMIT/marketplace-website/blob/main/E%20Books/the-great-gatsby.pdf" },
     { title: "Book 2", pdf: "book2.pdf" },
     { title: "Book 3", pdf: "book3.pdf" }
 ];
