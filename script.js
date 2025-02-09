@@ -1,7 +1,7 @@
 const books = [
     { title: "The Great Gatsby", pdf: "https://github.com/TRASMIT/marketplace-website/blob/main/E%20Books/the-great-gatsby.pdf" },
     { title: "The Odessy by homer", pdf: "https://github.com/TRASMIT/marketplace-website/blob/main/E%20Books/The_Odyssey.pdf" },
-    { title: "Dracula by Bram Stoker 1897 edition", pdf: "book3.pdf" }
+    { title: "Dracula by Bram Stoker 1897 edition", pdf: "https://github.com/TRASMIT/marketplace-website/blob/main/E%20Books/DRACULA%20by%20Bram%20Stoker.pdf" }
 ];
 const bookGrid = document.getElementById("bookGrid");
 function displayBooks() {
