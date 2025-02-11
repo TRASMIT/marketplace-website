@@ -7,7 +7,8 @@ const books = [
     { title: "Frankenstein", cover: "https://raw.githubusercontent.com/TRASMIT/marketplace-website/main/Book%20Covers/frankenstein-9781982146177_hr.jpg", pdf: "https://raw.githubusercontent.com/TRASMIT/marketplace-website/main/E%20Books/frankenstein.pdf" },
     { title: "The Wizard of Oz", cover: "https://raw.githubusercontent.com/TRASMIT/marketplace-website/main/Book%20Covers/b2a5b398a442f1776f00a09b8ed0d5c0.jpg", pdf: "https://raw.githubusercontent.com/TRASMIT/marketplace-website/main/E%20Books/wonderfulwizardo00baumiala.pdf" },
     { title: "Alice in Wonderland", cover: "https://raw.githubusercontent.com/TRASMIT/marketplace-website/main/Book%20Covers/il_fullxfull.1519409460_3v5o.avif", pdf: "https://raw.githubusercontent.com/TRASMIT/marketplace-website/main/E%20Books/alices-adventures-in-wonderland.pdf" },
-    { title: "Sense and Sensibility", cover: "https://raw.githubusercontent.com/TRASMIT/marketplace-website/main/Book%20Covers/510gZLQ4A3S.jpg", pdf: "https://raw.githubusercontent.com/TRASMIT/marketplace-website/main/E%20Books/sense-and-sensibility.pdf" }
+    { title: "Sense and Sensibility", cover: "https://raw.githubusercontent.com/TRASMIT/marketplace-website/main/Book%20Covers/510gZLQ4A3S.jpg", pdf: "https://raw.githubusercontent.com/TRASMIT/marketplace-website/main/E%20Books/sense-and-sensibility.pdf" },
+    { tilte: "A Study in Scarlet", cover: "https://github.com/TRASMIT/marketplace-website/blob/main/Book%20Covers/9781847498724.jpg", pdf: "https://TRASMIT.github.io/marketplace-website/E%20Books/A_Study_in_Scarlet.pdf" }
 
 
 ];
