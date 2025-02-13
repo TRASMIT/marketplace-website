@@ -22,13 +22,42 @@
         </ul>
     </nav>
     <main>
-    <div class="book-grid" id="bookGrid">
-        <!-- Books will be dynamically added here -->
-    </div>
-</main>
+        <div class="book-grid" id="bookGrid">
+            <!-- Books will be dynamically added here -->
+        </div>
+    </main>
 
-    <script src="script.js"></script>
+    <script>
+        const books = [
+            { title: "The Great Gatsby", cover: "https://raw.githubusercontent.com/TRASMIT/marketplace-website/main/Book%20Covers/The%20Great%20Gatsby%20Book%20Cover.jpg", pdf: "https://TRASMIT.github.io/marketplace-website/E%20Books/the-great-gatsby.pdf" },
+            { title: "A Study in Scarlet", cover: "https://raw.githubusercontent.com/TRASMIT/marketplace-website/main/Book%20Covers/9781847498724.jpg", pdf: "https://TRASMIT.github.io/marketplace-website/E%20Books/A_Study_in_Scarlet.pdf" }
+        ];
+
+        const bookGrid = document.getElementById("bookGrid");
+        const searchInput = document.getElementById("search");
+
+        function displayBooks(filteredBooks = books) {
+            bookGrid.innerHTML = "";
+            filteredBooks.forEach((book, index) => {
+                const bookElement = document.createElement("div");
+                bookElement.classList.add("book");
+                bookElement.innerHTML = `
+                    <a href="book-details.html?index=${index}">
+                        <img src="${book.cover}" alt="${book.title} Cover">
+                    </a>
+                    <h3>${book.title}</h3>
+                `;
+                bookGrid.appendChild(bookElement);
+            });
+        }
+
+        displayBooks();
+
+        searchInput.addEventListener("input", () => {
+            const searchText = searchInput.value.toLowerCase();
+            const filteredBooks = books.filter(book => book.title.toLowerCase().includes(searchText));
+            displayBooks(filteredBooks);
+        });
+    </script>
 </body>
 </html>
-
-
